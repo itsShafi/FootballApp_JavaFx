@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #333333;" stylesheets="@../MainPage/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.ClubLoginController">
+   <children>
+      <Label layoutX="74.0" layoutY="63.0" text="Username" textFill="WHITE" />
+      <Label layoutX="74.0" layoutY="125.0" text="Password" textFill="WHITE" />
+      <TextField fx:id="userText" layoutX="163.0" layoutY="59.0" />
+      <ButtonBar layoutX="137.0" layoutY="193.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetAction" text="Reset" />
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginAction" text="Login" />
+        </buttons>
+      </ButtonBar>
+      <Button layoutX="29.0" layoutY="200.0" mnemonicParsing="false" onAction="#showMainPage" text="Back" />
+      <TextField fx:id="passwordText" layoutX="163.0" layoutY="121.0" />
+   </children>
+</AnchorPane>

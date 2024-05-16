@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="485.0" spacing="10.0" style="-fx-background-color: #333333;" stylesheets="@../MainPage/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.ClubStatsController">
+   <children>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="65.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="clubInfoImageView" fitHeight="76.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="clubInfoClubName" alignment="BOTTOM_LEFT" prefHeight="66.0" prefWidth="310.0" text="Club Name" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="clubInfoTotalPlayersLabel" prefHeight="17.0" prefWidth="550.0" text="Total Players" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="80.0" />
+         </VBox.margin>
+      </Label>
+      <HBox spacing="5.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Button fx:id="clubInfoMaxAgeButton" mnemonicParsing="false" onAction="#showMaxAgePlayer" prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #333333; -fx-border-color: \\;" text="Max Age Player(s)" textFill="WHITE" />
+            <Button fx:id="clubInfoMaxHeightButton" mnemonicParsing="false" onAction="#showMaxHeightPlayer" prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #333333;" stylesheets="@../MainPage/Style.css" text="Max Height Player(s)" textFill="WHITE" />
+            <Button fx:id="clubInfoMaxSalaryButton" mnemonicParsing="false" onAction="#showMaxSalaryPlayer" prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #333333;" text="Max Salary Player(s)" textFill="WHITE" />
+         </children>
+      </HBox>
+      <HBox layoutX="150.0" layoutY="137.0">
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="272.0">
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+      </HBox>
+      <Label prefHeight="17.0" prefWidth="550.0" text="Country-wise Player Count" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="40.0" />
+         </VBox.margin>
+      </Label>
+      <ListView fx:id="clubInfoCountryListView" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2c2f33;" />
+   </children>
+</VBox>

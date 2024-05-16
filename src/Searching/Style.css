@@ -1,0 +1,20 @@
+
+
+
+.button
+{
+       -fx-background-color :  #3277a8  ;
+       -fx-border-width: 0.5;
+       -fx-text-fill : #ffffff ;
+
+}
+
+.button:hover{
+   -fx-background-color :  #8c32a8 ;
+   -fx-text-fill : #ffffff ;
+   -fx-border-width: 0.5;
+
+    /* -fx-border-color:  */
+}
+
+

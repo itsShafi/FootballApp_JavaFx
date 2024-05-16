@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #333333;" stylesheets="@../MainPage/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Searching.PlayerProfileController">
+   <children>
+      <Label fx:id="playerProfileNameLabel" layoutX="36.0" layoutY="40.0" prefHeight="26.0" prefWidth="358.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerProfileAgeLabel" layoutX="36.0" layoutY="80.0" prefHeight="26.0" prefWidth="358.0" text="Age" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerProfileHeightLabel" layoutX="36.0" layoutY="120.0" prefHeight="26.0" prefWidth="358.0" text="Height" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerProfileCountryLabel" layoutX="36.0" layoutY="160.0" prefHeight="26.0" prefWidth="358.0" text="Country" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerProfileClubLabel" layoutX="36.0" layoutY="200.0" prefHeight="26.0" prefWidth="358.0" text="Club" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerProfilePositionLabel" layoutX="36.0" layoutY="240.0" prefHeight="26.0" prefWidth="358.0" text="Position" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerProfileNumberLabel" layoutX="36.0" layoutY="280.0" prefHeight="26.0" prefWidth="358.0" text="Number" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerProfileWeeklySalaryLabel" layoutX="36.0" layoutY="320.0" prefHeight="26.0" prefWidth="358.0" text="Weekly Salary" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="playerProfilePlayerImageView" fitHeight="127.0" fitWidth="161.0" layoutX="401.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
